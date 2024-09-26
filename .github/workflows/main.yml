@@ -14,13 +14,13 @@ jobs:
     environment: Lw_env
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-        fetch-depth: 0
+     - uses: actions/checkout@v3
+       with:
+       fetch-depth: 0
 
-      - name: Call Leapwork GitHub Action
-        uses: leapwork/Github-action@v1.0
-        with:
+     - name: Call Leapwork GitHub Action
+       uses: leapwork/Github-action@v1.0
+       with:
           leapworkApiUrl: ${{ vars.LEAPWORK_API_URL }}
           leapworkApiKey: ${{ secrets.LEAPWORK_API_KEY }}
           leapworkSchedule: ${{ vars.LEAPWORK_SCHEDULE }}
