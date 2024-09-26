@@ -1,4 +1,5 @@
- name: Test Leapwork Action
+name: Test Leapwork Action
+
 on:
   push:
     branches:
